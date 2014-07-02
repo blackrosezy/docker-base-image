@@ -1,5 +1,4 @@
-Generic Base Image
-===================
+###Generic Base Image##
 
 Simple base image (inherited from Ubuntu 14.04 image) pre-installed with essential tools:
 ```
