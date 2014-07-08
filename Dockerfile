@@ -3,7 +3,7 @@ MAINTAINER Rozi <blackrosezy@gmail.com>
 
 # Install packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install software-properties-common \
-                      build-essential wget curl make gcc git less unzip zip \
+                      build-essential wget curl make gcc git less unzip zip rpl \
                       python python-pip python-dev \
                       && apt-get update 
 
