@@ -35,5 +35,5 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends langua
 locale-gen en_US
 
 ## Install a syslog daemon.
-DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends syslog-ng-core
+DEBIAN_FRONTEND=noninteractive apt-get install -y syslog-ng-core
 sed -i -E 's/^(\s*)system\(\);/\1unix-stream("\/dev\/log");/' /etc/syslog-ng/syslog-ng.conf
