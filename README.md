@@ -25,5 +25,9 @@ zip
 
 Usage:
 ```
-FROM morz/generic-base
+docker pull morz/generic-base:latest
 ```
+
+### License
+
+Newtoy is licensed under the MIT license. (http://opensource.org/licenses/MIT)
