@@ -14,6 +14,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 # Install supervisor
 RUN pip install supervisor
+RUN mkdir -p /var/log/supervisor
 
 # dcron, a lightweight cron daemon and can access environment variables
 RUN curl -L https://github.com/dubiousjim/dcron/archive/v4.5.tar.gz -o /tmp/dcron.tar.gz
