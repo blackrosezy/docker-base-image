@@ -9,8 +9,11 @@ RUN /tmp/prepare.sh
 # Install packages
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     apt-transport-https ca-certificates curl build-essential git htop language-pack-en \
-    less make python python-dev python-pip rpl software-properties-common supervisor syslog-ng-core \
-    telnet wget zip
+    less make python python-dev python-pip rpl software-properties-common syslog-ng-core \
+    telnet wget zip automake
+
+# Install supervisor
+pip install supervisor
 
 # dcron, a lightweight cron daemon and can access environment variables
 RUN curl -L https://github.com/dubiousjim/dcron/archive/v4.5.tar.gz -o /tmp/dcron.tar.gz
