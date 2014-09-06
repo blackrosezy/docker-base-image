@@ -13,7 +13,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
     telnet wget zip automake
 
 # Install supervisor
-pip install supervisor
+RUN pip install supervisor
 
 # dcron, a lightweight cron daemon and can access environment variables
 RUN curl -L https://github.com/dubiousjim/dcron/archive/v4.5.tar.gz -o /tmp/dcron.tar.gz
