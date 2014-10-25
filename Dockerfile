@@ -18,7 +18,10 @@ RUN mkdir -p /var/log/supervisor
 
 # dcron, a lightweight cron daemon and can access environment variables
 RUN curl -L https://github.com/dubiousjim/dcron/archive/v4.5.tar.gz -o /tmp/dcron.tar.gz
-RUN tar xzvf /tmp/dcron.tar.gz -C /tmp && cd /tmp/dcron-* && make CRONTAB_GROUP=root && make install 
+RUN tar xzvf /tmp/dcron.tar.gz -C /tmp && cd /tmp/dcron-* && make CRONTAB_GROUP=root && make install
+
+# set default HOME environment variable
+ENV HOME /root
 	
 # Cleanup
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
