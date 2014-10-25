@@ -1,6 +1,6 @@
-###Tropica - Generic Base Image
+###Docker Base Image
 
-Simple base image (inherited from Ubuntu 14.04 image) pre-installed with essential tools:
+Simple generic base image (inherited from Ubuntu 14.04 image) pre-installed with essential tools:
 ```
 apt-transport-https
 ca-certificates
@@ -30,4 +30,4 @@ docker pull morz/generic-base:latest
 
 ### License
 
-Newtoy is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+Docker Base Image is licensed under the MIT license. (http://opensource.org/licenses/MIT)
